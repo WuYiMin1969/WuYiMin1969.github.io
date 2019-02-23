@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>吳逸敏的繪畫作品</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+     <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+<style>
+*{
+        font-family: "微軟正黑體";
+    }
+ #min{
+    width: 100px;
+  }
+/* h6{
+    text-align:center;
+} */
+img {
+            width: 100%;
+            vertical-align: top;
+        }
+        .row a{
+  color:#aaa;  
+}  
+#gotop{
+            position:fixed;
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: #333;
+            text-decoration: none;
+            color: #fff;
+            z-index:999;
+            /* 圖層的順序，數字越大越前 */
+            right: 10px;
+            bottom: 60px;
+            line-height: 50px;
+            text-align: center;
+
+            /* display: none; */
+        }
+
+</style>
+<!--GOTOP的script -->
+<script>
+    $(function(){
+       
+       $("#gotop").click(function(){
+           $("html,body").animate({
+               scrollTop:0
+           });
+           return false;
+       });
+       $("#gotop").hide();
+
+       $(window).scroll(function(){
+            let h = $("html,body").scrollTop();
+            console.log(h);
+            if(h>600){
+                $("#gotop").fadeIn();
+            }else{
+                $("#gotop").fadeOut();
+            };
+        });
+    })
+</script>
+
+
+</head>
+
+<body>
+    <!--GOTOP -->
+ <!--兩種寫法 return false或 <a href="javascript:;" id="gotop">TOP</a> -->
+ <a href="#" id="gotop">TOP</a>
+
+    <!-- 選單 -->
+    </head>
+    <body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container">
+      <a href="index.html" class="navbar-brand"><img src="images/logo_yimin.png" alt="Amy's logo" id="min"></a>
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#navi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navi">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a href="illustration.html" class="nav-link">ILLUSTRATION</a></li>
+      <li class="nav-item"><a href="design.html" class="nav-link">DESIGN</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">ABOUT</a></li>
+    
+    </ul>
+    </div>
+    </div>
+    </nav>
+    
+  <!-- 作品區前言 -->
+  <div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-s-10 pb-4 pt-5">
+            <p class="text-center">即使在工作，閒暇時我仍保持創作的習慣，更因為飼養貓咪，留有很多牠的素描。因為喜愛這世界，所以想用畫筆把它描繪下來，我發現，透過繪畫，可以更認識所畫的對象物。更認識之後，所投射的情感會更強烈，更清晰，就像是寫一篇讀書報告，會更明白所讀的內容那樣。所以也可以說，透過繪畫，我更認識了世界。
+            </p>
+           
+        </div>
+    </div>
+    <hr>
+    </div>
+
+    <!-- 四張小畫 -->
+<div class="container">
+<div class="row">
+   
+<div class="col-lg-3 col-md-6">
+<img src="images/sketch_draw/sketch_1.jpg" alt="KiKi素描">
+<h6 class="text-center pt-2 pb-3">KiKi素描</h6>
+</div>
+<div class="col-lg-3 col-md-6">
+  <img src="images/sketch_draw/sketch_2.jpg" alt="KiKi素描">
+  <h6 class="text-center pt-2 pb-3">KiKi素描</h6>
+
+</div>
+<div class="col-lg-3 col-md-6">
+    <img src="images/sketch_draw/sketch_3.jpg" alt="KiKi素描">
+    <h6 class="text-center pt-2 pb-3">KiKi素描</h6>
+
+  </div>
+  <div class="col-lg-3 col-md-6">
+      <img src="images/sketch_draw/sketch_4.jpg" alt="宇辰畫像">
+      <h6 class="text-center pt-2 pb-3">宇辰畫像</h6>
+    </div>
+    <!--花的畫  -->
+      <div class="col-lg-3 col-md-6">
+        <img src="images/water_flower/flower-01.jpg" alt="鳶尾花">
+        <h6 class="text-center pt-2 pb-3">鳶尾花</h6>
+  
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <img src="images/water_flower/flower-02.jpeg" alt="黃色玫瑰">
+        <h6 class="text-center pt-2 pb-3">黃色玫瑰</h6>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <img src="images/water_flower/flower-03.jpg" alt="玫瑰">
+        <h6 class="text-center pt-2 pb-3">玫瑰</h6>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <img src="images/water_flower/flower-04.jpg" alt="葵百合">
+        <h6 class="text-center pt-2 pb-3">葵百合</h6>
+      </div>
+  
+<!-- 水彩 -->
+<div class="col-lg-4 col-ms-6">
+    <img src="images/water_flower/water-01.jpg" alt="曬衣場">
+    <h6 class="text-center pt-2 pb-3">曬衣場</h6>
+</div>
+<div class="col-lg-4 col-ms-6">
+        <img src="images/water_flower/water-02.jpg" alt="靜物寫生">
+        <h6 class="text-center pt-2 pb-3">靜物寫生</h6>
+    </div>
+    <div class="col-lg-4 col-ms-6">
+            <img src="images/water_flower/water-03.jpg" alt="往基隆的海邊">
+            <h6 class="text-center pt-2 pb-3">往基隆的海邊</h6>
+        </div>
+        <div class="col-lg-4 col-ms-6">
+                <img src="images/water_flower/water-04.jpg" alt="慶功宴的餐點">
+                <h6 class="text-center pt-2 pb-3">慶功宴的餐點</h6>
+            </div>
+            <div class="col-lg-4 col-ms-6">
+                    <img src="images/water_flower/water-05.jpg" alt="靜物寫生">
+                    <h6 class="text-center pt-2 pb-3">靜物寫生</h6>
+                </div>
+                <div class="col-lg-4 col-ms-6">
+                        <img src="images/water_flower/water-06.jpg" alt="靜物寫生">
+                        <h6 class="text-center pt-2 pb-3">靜物寫生</h6>
+                    </div>
+
+</div>
+</div>
+
+<!--商業插畫內容 -->
+<div class="container">
+        <div class="row justify-content-center">
+                <div class="col-lg-6 col-s-10 pb-4 pt-5">
+                    <h2 class="text-center">插畫</h2>
+        <p class="text-center">在教科書出版公司上班時，我曾經替公司畫藝術與人文科的教材。這是看著錄影帶，畫出的廣東獅和台灣獅。我是看漫畫長大的，也畫了一些少女漫畫風格的作品，雖然學校的老師不喜歡。畫漫畫人物的能力，幫助了我有段時間畫佳音英語的插畫。那時還不知道有Painter，我把黑色線稿掃進電腦，用數位筆在Photoshop著色。
+        </p></div>
+                </div>
+        <hr>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+<div class="col-lg-4 col-md-6 col-12">
+    <img src="images/water_flower/water-10.jpg" alt="光復書局教具製作">
+    <h6 class="text-center pt-2 pb-3">光復書局教具製作</h6>
+</div>
+<div class="col-lg-4 col-md-6 col-12">
+        <img src="images/water_flower/water-11.jpg" alt="光復書局教具製作">
+        <h6 class="text-center pt-2 pb-3">光復書局教具製作</h6>
+    </div>
+    <div class="col-lg-4 col-md-6 col-12">
+            <img src="images/comic/comic-01.jpg" alt="奔跑中的女孩">
+            <h6 class="text-center pt-2 pb-3">奔跑中的女孩</h6>
+        </div>
+        <div class="col-lg-4 col-md-6 col-12">
+                <img src="images/comic/comic-02.jpg" alt="漫畫故事">
+                <h6 class="text-center pt-2 pb-3">漫畫故事</h6>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                    <img src="images/comic/comic-03.jpg" alt="佳音英語插畫：聖誕老公公">
+                    <h6 class="text-center pt-2 pb-3">佳音英語插畫：聖誕老公公</h6>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                        <img src="images/comic/comic-04.jpg" alt="佳音英語插畫：聖誕小精靈">
+                        <h6 class="text-center pt-2 pb-3">佳音英語插畫：聖誕小精靈</h6>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                            <img src="images/comic/comic-05.jpg" alt="佳音英語插畫：隱形眼鏡">
+                            <h6 class="text-center pt-2 pb-3">佳音英語插畫：隱形眼鏡</h6>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                                <img src="images/comic/comic-06.jpg" alt="佳音英語插畫：愛護小動物">
+                                <h6 class="text-center pt-2 pb-3">佳音英語插畫：愛護小動物</h6>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-12">
+                                    <img src="images/comic/comic-07.jpg" alt="佳音英語插畫：小猴子的一天">
+                                    <h6 class="text-center pt-2 pb-5">佳音英語插畫：小猴子的一天</h6>
+                                </div>
+                                   
+                                </div>
+                            </div>
+  <!--footer  -->
+  <footer class="container-fluid bg-dark pt-2 pb-2">
+    <div class="row justify-content-center clearfix">
+      <div class="col-12 text-white-50 text-center">
+        <p>&copy;2018 Amy Wu design, All rights reserved.&nbsp; &nbsp;<a href="https://www.facebook.com/mori.suke"><i class="fab fa-facebook-square fa-lg"></i></a></p>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+
+ 
+</body>
+</html>
